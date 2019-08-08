@@ -25,8 +25,8 @@ class TestContact:
         self.page.add_contact.input_name(name)
         self.page.add_contact.input_phone(phone)
 
-    @pytest.mark.parametrize(("nickname", "phone"), analyze_file("contact_data", "test_add_nickname"))
-    def test_add_nickname(self, nickname, phone):
-        self.page.contact_list.click_add_contact()
-        self.page.add_contact.input_nickname(nickname)
-        self.page.add_contact.input_phone(phone)
+    # @pytest.mark.parametrize(("nickname", "phone"), analyze_file("contact_data", "test_add_nickname"))
+    # def test_add_nickname(self, nickname, phone):
+    #     self.page.contact_list.click_add_contact()
+    #     self.page.add_contact.input_nickname(nickname)
+    #     self.page.add_contact.input_phone(phone)
