@@ -20,13 +20,13 @@ class TestContact:
         self.driver.quit()
 
     def test_1(self):
-        assert 1
+        assert 0
 
     def test_2(self):
         assert 0
 
     def test_3(self):
-        assert 0
+        assert 1
 
     def test_4(self):
         assert 1
