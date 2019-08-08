@@ -26,10 +26,10 @@ class TestContact:
         assert 0
 
     def test_1(self):
-        assert 1
+        assert 0
 
     def test_1(self):
-        assert 0
+        assert 1
     # @pytest.mark.parametrize(("name", "phone"), analyze_file("contact_data", "test_add_contact"))
     # def test_add_contact(self, name, phone):
     #     self.page.contact_list.click_add_contact()
