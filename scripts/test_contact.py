@@ -19,16 +19,16 @@ class TestContact:
         time.sleep(2)
         self.driver.quit()
 
-    def test_1(self):
+    def test_log1(self):
         assert 0
 
-    def test_2(self):
+    def test_log2(self):
         assert 0
 
-    def test_3(self):
+    def test_log3(self):
         assert 1
 
-    def test_4(self):
+    def test_log(self):
         assert 1
     # @pytest.mark.parametrize(("name", "phone"), analyze_file("contact_data", "test_add_contact"))
     # def test_add_contact(self, name, phone):
