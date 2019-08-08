@@ -19,25 +19,14 @@ class TestContact:
         time.sleep(2)
         self.driver.quit()
 
-    def test_log1(self):
-        assert 0
+    @pytest.mark.parametrize(("name", "phone"), analyze_file("contact_data", "test_add_contact"))
+    def test_add_contact(self, name, phone):
+        self.page.contact_list.click_add_contact()
+        self.page.add_contact.input_name(name)
+        self.page.add_contact.input_phone(phone)
 
-    def test_log2(self):
-        assert 0
-
-    def test_log3(self):
-        assert 1
-
-    def test_log(self):
-        assert 1
-    # @pytest.mark.parametrize(("name", "phone"), analyze_file("contact_data", "test_add_contact"))
-    # def test_add_contact(self, name, phone):
-    #     self.page.contact_list.click_add_contact()
-    #     self.page.add_contact.input_name(name)
-    #     self.page.add_contact.input_phone(phone)
-    #
-    # @pytest.mark.parametrize(("nickname", "phone"), analyze_file("contact_data", "test_add_nickname"))
-    # def test_add_nickname(self, nickname, phone):
-    #     self.page.contact_list.click_add_contact()
-    #     self.page.add_contact.input_nickname(nickname)
-    #     self.page.add_contact.input_phone(phone)
+    @pytest.mark.parametrize(("nickname", "phone"), analyze_file("contact_data", "test_add_nickname"))
+    def test_add_nickname(self, nickname, phone):
+        self.page.contact_list.click_add_contact()
+        self.page.add_contact.input_nickname(nickname)
+        self.page.add_contact.input_phone(phone)
