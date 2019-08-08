@@ -22,13 +22,13 @@ class TestContact:
     def test_1(self):
         assert 1
 
-    def test_1(self):
+    def test_2(self):
         assert 0
 
-    def test_1(self):
+    def test_3(self):
         assert 0
 
-    def test_1(self):
+    def test_4(self):
         assert 1
     # @pytest.mark.parametrize(("name", "phone"), analyze_file("contact_data", "test_add_contact"))
     # def test_add_contact(self, name, phone):
