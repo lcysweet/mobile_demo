@@ -1,0 +1,19 @@
+test_add_contact:
+  test_add_contact_001:
+    name: "zhangsan"
+    phone: "18888888888"
+  test_add_contact_002:
+    name: "lisi"
+    phone: "17777777777"
+  test_add_contact_003:
+    name: "wangwu"
+    phone: "16666666666"
+
+
+test_add_nickname:
+  test_add_nickname_001:
+    nickname: "xiaoming"
+    phone: "111111111"
+  test_add_nickname_002:
+    nickname: "xiaohong"
+    phone: "222222222"
